@@ -48070,7 +48070,7 @@ n=g
 f=A.aQ0()
 f.a="GET"
 s=9
-return A.K(J.aLt(n,"https://www.co-drs.org/fr/co/creature/"+b0+"/json",null,null,null,f,null,i),$async$AQ)
+return A.K(J.aLt(n,"https://thingproxy.freeboard.io/fetch/https://www.co-drs.org/fr/co/creature/"+b0+"/json",null,null,null,f,null,i),$async$AQ)
 case 9:m=b2
 if(m.c===200){l=m.a
 k=J.b7(l,"name")
