@@ -9504,8 +9504,8 @@ L7:function L7(a){this.a=a},
 a87:function a87(){},
 a88:function a88(a){this.a=a},
 zp:function zp(){},
-aLV(a){var s=null,r=t.N,q=t.z,p=new A.a0j($,$,s,"GET",s,s,B.eK,A.aXD(),!0,A.A(r,q),!0,5,!0,s,s,B.o3)
-p.LO(a,s,s,s,s,s,s,s,s,s,s,s,B.eK,s,s)
+aLV(a,b){var s=null,r=t.N,q=t.z,p=new A.a0j($,$,s,"GET",s,s,B.eK,A.aXD(),!0,A.A(r,q),!0,5,!0,s,s,B.o3)
+p.LO(a,s,s,b,s,s,s,s,s,s,s,s,B.eK,s,s)
 p.hs$=A.A(r,q)
 p.ew$=""
 p.sTn(s)
@@ -48061,15 +48061,16 @@ s=q}while(true)switch(s){case 0:a7=null
 s=a9==null?2:4
 break
 case 2:q=6
-i=A.aLV("application/json")
-h=new A.a42($,new A.Lr(A.b([B.Cj],t.i6)),$,new A.a0g(A.aVV()),!1)
-h.dD$=i
-h.eV$=new A.a0N(A.ar(t.Gf))
-n=h
-g=A.aQ0()
-g.a="GET"
+i=t.z
+h=A.aLV("application/json",A.aD(["Access-Control-Allow-Origin","*","Access-Control-Allow-Credentials","true"],t.N,i))
+g=new A.a42($,new A.Lr(A.b([B.Cj],t.i6)),$,new A.a0g(A.aVV()),!1)
+g.dD$=h
+g.eV$=new A.a0N(A.ar(t.Gf))
+n=g
+f=A.aQ0()
+f.a="GET"
 s=9
-return A.K(J.aLt(n,"https://www.co-drs.org/fr/co/creature/"+b0+"/json",null,null,null,g,null,t.z),$async$AQ)
+return A.K(J.aLt(n,"https://www.co-drs.org/fr/co/creature/"+b0+"/json",null,null,null,f,null,i),$async$AQ)
 case 9:m=b2
 if(m.c===200){l=m.a
 k=J.b7(l,"name")
@@ -48089,29 +48090,29 @@ case 8:s=3
 break
 case 4:a7=a9
 case 3:if(a7!=null){i=o.a
-e=a7
-d=J.as(e)
-j=J.b7(J.b7(d.h(e,"name"),0),"value")
-c=d.h(e,"picture")
+h=a7
+d=J.as(h)
+j=J.b7(J.b7(d.h(h,"name"),0),"value")
+c=d.h(h,"picture")
 d=J.as(c)
 b=d.gbX(c)?d.h(c,0):null
 a=b!=null?J.b7(b,"creature_token_url"):"https://www.co-drs.org/sites/default/files/styles/creatures_token/public/co/creature/2023-04/Sosie%20d%C3%A9moniaque.jpg.webp?itok=XNvMJvSR"
-a0=A.aPJ(o.lJ(e,"category",null))
-a1=A.aPI(o.lJ(e,"environment",null))
-a2=A.aPG(o.lJ(e,"archetype",null))
-a3=A.aPH(o.lJ(e,"boss_type",null))
-d=o.lJ(e,"level","-1")
+a0=A.aPJ(o.lJ(h,"category",null))
+a1=A.aPI(o.lJ(h,"environment",null))
+a2=A.aPG(o.lJ(h,"archetype",null))
+a3=A.aPH(o.lJ(h,"boss_type",null))
+d=o.lJ(h,"level","-1")
 d.toString
 a4=A.aHz(d)
-d=o.lJ(e,"defense","-1")
+d=o.lJ(h,"defense","-1")
 d.toString
 a5=A.dZ(d,null)
-d=o.lJ(e,"init","-1")
+d=o.lJ(h,"init","-1")
 d.toString
 a6=A.dZ(d,null)
-e=o.lJ(e,"health_point","-1")
-e.toString
-i.push(new A.jY(j,a,a0,a1,a2,a3,a4,a5,a6,A.dZ(e,null)))}else A.ow("monster id "+b0+" is null")
+h=o.lJ(h,"health_point","-1")
+h.toString
+i.push(new A.jY(j,a,a0,a1,a2,a3,a4,a5,a6,A.dZ(h,null)))}else A.ow("monster id "+b0+" is null")
 return A.N(null,r)
 case 1:return A.M(p,r)}})
 return A.O($async$AQ,r)},
