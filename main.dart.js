@@ -48062,7 +48062,7 @@ s=a9==null?2:4
 break
 case 2:q=6
 i=t.z
-h=A.aLV("application/json",A.aD(["Access-Control-Allow-Origin","*","Access-Control-Allow-Credentials","true"],t.N,i))
+h=A.aLV("application/json",A.aD(["Access-Control-Allow-Origin","*","Access-Control-Allow-Credentials","true","Access-Control-Request-Method","GET, POST, PUT, OPTIONS","Access-Control-Allow-Methods","GET, DELETE, HEAD, OPTIONS"],t.N,i))
 g=new A.a42($,new A.Lr(A.b([B.Cj],t.i6)),$,new A.a0g(A.aVV()),!1)
 g.dD$=h
 g.eV$=new A.a0N(A.ar(t.Gf))
@@ -48070,7 +48070,7 @@ n=g
 f=A.aQ0()
 f.a="GET"
 s=9
-return A.K(J.aLt(n,"https://thingproxy.freeboard.io/fetch/https://www.co-drs.org/fr/co/creature/"+b0+"/json",null,null,null,f,null,i),$async$AQ)
+return A.K(J.aLt(n,"https://corsproxy.github.io/https://www.co-drs.org/fr/co/creature/"+b0+"/json",null,null,null,f,null,i),$async$AQ)
 case 9:m=b2
 if(m.c===200){l=m.a
 k=J.b7(l,"name")
